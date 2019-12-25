@@ -1,0 +1,150 @@
+.leftBox{
+  left: 0;
+}
+.leftBox header{
+  height: 80px;
+}
+.leftBox header ul a{
+  font-size: 1.6rem;
+}
+.loginBox{
+  height: calc(100vh - 80px);
+}
+.icon-shangwutubiao-{
+  font-size: 24px;
+  color: #67a4c7;
+}
+.login a{
+  font-size: 1.6rem;
+  border-radius:15px !important;
+}
+.menu{
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 2000;
+}
+.menu #closeBtn{
+  cursor: pointer;
+}
+.menu .list ul a{
+  font-size: 1.8rem;
+}
+.menu .font a{
+  font-size: 1.6rem;
+}
+.menu footer {
+  font-size: 1.4rem;
+}
+.menu footer,
+.menu footer a{
+  color: rgba(0, 0, 0, 0.38);
+}
+.menu.hide{
+  opacity: 0;
+  transform: scale(2);
+  z-index: -1;
+}
+.menu .show{
+  opacity: 1;
+  transform: scale(1);
+}
+@media (max-width : 991.98px){
+  .leftBox{
+    position: relative !important;
+  }
+  .login{
+    height: auto;
+  }
+}
+/* 右侧内容 */
+
+#pic .icon-ico_leftarrow,
+#pic .icon-iconfontjiantou4{
+  font-size: 6rem;
+}
+.start h2{
+  font-size: 2.2rem;
+}
+.start p{
+  font-size: 1.6rem;
+  line-height: 34px;
+
+}
+.start a{
+  color: #c2a661;
+}
+.start button {
+  border-radius: 13px;
+}
+.betters h3,
+.teach h5{
+  font-size: 2.2rem;
+}
+
+.betters p,
+.teach p{
+  font-size: 1.6rem;
+}
+
+.betters li{
+  margin-top: 56px;
+}
+.betters li a{
+  transition: all 0.2s;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+}
+.betters li a img{
+  width: 40%;
+  margin-top: -28px;
+}
+.betters li a h4{
+  font-size: 1.6rem;
+}
+.betters li a p{
+  font-size: 1.4rem;
+}
+.betters li a p.caption{
+  color: #c2a661;
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+.betters li a:hover{
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.22);
+  transform: translateY(-5px);
+}
+.scroll ul{
+  width: 1216px;
+
+}
+.scroll li{
+  width: 288px;
+  transition: all 0.2s;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+}
+.scroll li:hover{
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.22);
+  transform: translateY(-5px);
+
+}
+.scroll button{
+  z-index: 2000;
+  border-radius: 50%;
+  left: 840px;
+  top: 128px;
+}
+.scroll li span{
+  font-size: 1.6rem;
+  background-color: #c2a661;
+  left: 0;
+  top: 6px;
+}
+footer ul{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+}
+footer a.active {
+  color: #00a862 !important;
+}
