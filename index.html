@@ -16,7 +16,7 @@
   <div class="container-fluid">
     <div class="row justify-content-end">
       <!-- 左侧内容 -->
-      <div class="col-lg-3 position-fixed leftBox border-right">
+      <div class="col-lg-4 position-fixed leftBox border-right">
         <!-- 导航栏 -->
         <header class="navbar d-none d-sm-flex px-0 px-lg-3 py-3 py-lg-4">
           <a class="navbar-brand" href="#">
@@ -39,8 +39,8 @@
         </header>
         <!-- 登录区域 -->
         <div class="login loginBox d-flex flex-column justify-content-center">
-          <div class="px-0 p-lg-5">
-            <h2 class="font-weight-bold ">
+          <div class="px-0 p-lg-5 ">
+            <h2 class="font-weight-bolder ">
               <p>心情惬意，来杯咖啡 <span class="iconfont icon-shangwutubiao-"></span></p>
             </h2>
             <div class="d-none d-sm-block my-3">
@@ -63,20 +63,21 @@
             <div class="list">
               <ul class="list-unstyled px-sm-5 pl-sm-5">
                 <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">门店</a></li>
-                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">门店</a></li>
-                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">门店</a></li>
+                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">星享俱乐部</a></li>
+                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">菜单</a></li>
                 <hr/>
-                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">门店</a></li>
-                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">门店</a></li>
-                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">门店</a></li>
-                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">门店</a></li>
-                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">门店</a></li>
-                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">门店</a></li>
-                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">门店</a></li>
-                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">门店</a></li>
+                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">星巴克移动应用</a></li>
+                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">星礼卡</a></li>
+                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">星巴克臻选™</a></li>
+                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">啡快™ － 在线点 到店取</a></li>
+                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">专星送™</a></li>
+                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">咖啡星讲堂</a></li>
+                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">上海烘焙工坊</a></li>
+                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">关于星巴克</a></li>
+                <li><a href="#" class=" font-weight-bold text-dark py-2 d-block">帮助中心</a></li>
               </ul>
             </div>
-            <div class="my-3 mx-sm-5 pl-sm-5 font">
+            <div class="my-3 mx-sm-5 pr-sm-5 font">
               <a href="#" class="text-success">
                 <span class="iconfont icon-yonghu mr-1 text-muted"></span><span>用户</span> 
               </a>
@@ -85,7 +86,7 @@
             <!-- 中间列表和登录按钮 结束 -->
 
             <!-- footer -->
-            <footer class="pb-5">
+            <footer class="pb-5 mx-sm-5">
               <div>
                 <a href="">English</a> | <a href="">隐私政策</a> |<a href="">使用条款</a> 
               </div>
@@ -320,7 +321,9 @@
 
   <script>
     $('#showBtn').on('click',function (){
-      $('.menu').removeClass('hide').addClass('show');
+      $('.menu').removeClass('hide').addClass('show').css({
+          overflow : 'auto'
+        });
       showMenu()
     })
     $('#closeBtn').on('click',function() {
@@ -329,15 +332,16 @@
     })
 
     $(window).resize(showMenu);
+
     function showMenu () {
-      console.log(1111)
+     
       if ($(window).innerWidth() <= 992 && $('.menu').hasClass('show')){
-        $('body').css({
-          overflow : 'hidden'
+        $('.mrRight').css({
+          display:'none'
         })
       }else{
-        $('body').css({
-          overflow : 'auto'
+        $('.mrRight').css({
+          display : 'block'
         })
       }
     }
